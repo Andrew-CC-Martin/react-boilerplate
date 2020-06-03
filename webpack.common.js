@@ -14,13 +14,11 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
  *   -filename hashing (to ensure code updates result in client's cache being updated)
  **/
 module.exports = {
-  mode: 'development',
   entry: './src/index.js',
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  devtool: 'inline-source-map',
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
