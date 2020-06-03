@@ -1,0 +1,30 @@
+{
+  "name": "bootstrap-todo-client",
+  "version": "1.0.0",
+  "description": "a project to create the classic todo list app, bootstrapped entirely from scratch",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Andrew-CC-Martin/bootstrap-todo-client.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Andrew-CC-Martin/bootstrap-todo-client/issues"
+  },
+  "homepage": "https://github.com/Andrew-CC-Martin/bootstrap-todo-client#readme",
+  "devDependencies": {
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11"
+  },
+  "dependencies": {
+    "lodash": "4.17.15",
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  }
+}
