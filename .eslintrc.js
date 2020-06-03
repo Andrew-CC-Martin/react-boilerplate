@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    "jest/globals": true,
   },
   extends: [
     'plugin:react/recommended',
@@ -20,13 +21,19 @@ module.exports = {
   },
   plugins: [
     'react',
+    'jest',
   ],
   rules: {
-    semi: ['error', 'never'],
+    semi: [
+      'error', 'never'
+    ],
     'import/no-extraneous-dependencies': [
       'error', {
-        devDependencies: ['**/*.test.js', '**/*webpack.*'],
+        devDependencies: [
+          '**/*.test.js*', '**/*webpack.*'
+        ],
       },
     ],
+    'eol-last': 2
   },
 }
