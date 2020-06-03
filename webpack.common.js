@@ -12,7 +12,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
  * Other features to consider adding:
  *   - code splitting
  *   -filename hashing (to ensure code updates result in client's cache being updated)
- **/
+ * */
 module.exports = {
   entry: './src/index.js',
   output: {
@@ -21,7 +21,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './src/index.html'
+      template: './src/index.html',
     }),
     new CleanWebpackPlugin(),
   ],
@@ -41,13 +41,13 @@ module.exports = {
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          }
-        }
-      }
+            presets: ['@babel/preset-env', '@babel/preset-react'],
+          },
+        },
+      },
     ],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
-  }
+  },
 }
