@@ -28,12 +28,27 @@ module.exports = {
   ],
   module: {
     rules: [
+      // loader for image assets
       {
         test: /\.(png|svg|jpg|gif)$/,
         use: [
           'file-loader',
         ],
       },
+      // babel-loader: transpile es6 syntax
+      {
+        test: /\.m?(js|jsx)$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env', '@babel/preset-react']
+          }
+        }
+      }
     ],
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  }
 }

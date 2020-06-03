@@ -19,6 +19,10 @@
   },
   "homepage": "https://github.com/Andrew-CC-Martin/bootstrap-todo-client#readme",
   "devDependencies": {
+    "@babel/core": "7.10.2",
+    "@babel/preset-env": "7.10.2",
+    "@babel/preset-react": "7.10.1",
+    "babel-loader": "8.1.0",
     "clean-webpack-plugin": "3.0.0",
     "file-loader": "6.0.0",
     "html-webpack-plugin": "4.3.0",
