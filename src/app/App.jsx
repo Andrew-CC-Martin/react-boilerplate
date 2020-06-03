@@ -1,7 +1,3 @@
 import React from 'react'
 
-export const App = () => {
-  return (
-    <p>hello react</p>
-  )
-}
+export const App = () => <p>hello react</p>
